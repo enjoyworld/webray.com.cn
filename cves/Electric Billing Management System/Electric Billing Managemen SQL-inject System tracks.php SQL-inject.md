@@ -1,4 +1,4 @@
-Exploit Title: dingfanzu-CMS chpwd.php username SQL inject
+Exploit Title:  electric-billing-management-system tracks.php SQL-inject
 
 Exploit Author: webraybtl@webray.com.cn inc
 
