@@ -1,4 +1,4 @@
-petshop-management-system any file upload
+petshop-management-system  add_client.php any file upload
 
 Exploit Author: webraybtl@webray.com.cn inc
 
