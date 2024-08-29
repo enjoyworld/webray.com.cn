@@ -37,6 +37,8 @@ The reason for the arbitrary file upload vulnerability is that the website appli
 Proof of Concept
 
 ![image](https://github.com/user-attachments/assets/ed3722ad-d1f6-431c-995f-f3cb2e23ba40)
+![image](https://github.com/user-attachments/assets/abbd8988-36db-428f-b854-be84523734f9)
+
 ![image](https://github.com/user-attachments/assets/57cb8cef-7350-412d-b644-8d70a2088a2f)
 
 
